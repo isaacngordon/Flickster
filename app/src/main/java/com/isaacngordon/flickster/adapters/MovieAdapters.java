@@ -15,6 +15,7 @@ import com.isaacngordon.flickster.models.Movie;
 
 import java.util.List;
 
+
 public class MovieAdapters extends RecyclerView.Adapter<MovieAdapters.ViewHolder> {
 
     Context context;
@@ -28,7 +29,7 @@ public class MovieAdapters extends RecyclerView.Adapter<MovieAdapters.ViewHolder
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        View view = LayoutInflater.from(context).inflate(R.layout.item_movie, parent, false);
+        View view = LayoutInflater.from(context).inflate(R.layout.item_movie, viewGroup, false);
         return new ViewHolder(view);
     }
 
