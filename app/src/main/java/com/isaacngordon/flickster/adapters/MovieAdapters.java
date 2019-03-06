@@ -1,6 +1,7 @@
 package com.isaacngordon.flickster.adapters;
 
 import android.content.Context;
+import android.content.res.Configuration;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -62,7 +63,12 @@ public class MovieAdapters extends RecyclerView.Adapter<MovieAdapters.ViewHolder
         public void bind(Movie movie) {
             tvTitle.setText(movie.getTitle());
             tvOverview.setText(movie.getOverview());
-            Glide.with(context).load(movie.getPosterPath()).into(ivPoster);
+            String imageUrl = movie.getPosterPath();
+            //use backdrop if in landscape mode
+            if(context.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE)
+                imageUrl = movie.getBackdropPath();
+
+            Glide.with(context).load(imageUrl).into(ivPoster);
         }
     }
 }
