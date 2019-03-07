@@ -45,7 +45,7 @@ I created a landscape layout for the DetailsActivity. However, when rotating int
 
 ### App Walkthough GIF
 
-<img src="https://github.com/isaacngordon/Flickster/blob/master/walkthrough.gif" width=250><br>
+<img src="https://github.com/isaacngordon/Flickster/blob/master/walkthrough.gif" width=350><br>
 
 ### Notes
 There were some variables that could not be found, like parent, which actually just had a different name within its context. Thank you StackOverflow for your help!
