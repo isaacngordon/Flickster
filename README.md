@@ -21,8 +21,8 @@ Flickster is an app that allows users to browse movies from the [The Movie Datab
 
 ### Notes
 I created a landscape layout for the DetailsActivity. However, when rotating into landscape mode there are 2 problems:
-[1] I cannot scroll down to see the complete overview
-[2] The trailer tops and needs to be played from the beginning (same if change back to portrait).
+- [1] I cannot scroll down to see the complete overview
+- [2] The trailer tops and needs to be played from the beginning (same if change back to portrait).
 
 ---
 
